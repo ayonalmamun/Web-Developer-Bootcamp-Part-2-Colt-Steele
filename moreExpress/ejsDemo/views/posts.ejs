@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+<h1>Books</h1>
+
+<!-- <% for (var i=0;i<posts.length;i++){ %>
+	<li>
+		Name : <%= posts[i].bname %> - <%= posts[i].writer %>
+	</li>							 
+<% } %> -->
+
+<% posts.forEach(function(post){ %>
+	<li>
+		Name : <%= post.bname %> - <%= post.writer %>
+	</li>							 
+<% }) %>
+
+<%- include("partials/footer") %>
+

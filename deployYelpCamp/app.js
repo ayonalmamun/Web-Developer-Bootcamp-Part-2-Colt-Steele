@@ -17,7 +17,8 @@ var commentRoutes 		= require("./routes/comments"),
 
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
-mongoose.connect('mongodb://localhost/yelpCamp', {useNewUrlParser: true});
+// mongoose.connect('mongodb://localhost/yelpCamp', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://ayonalmamun:1212@@21@yelpcamp-fwprk.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true});
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride('_method'));
 app.use(flash());

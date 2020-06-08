@@ -1,0 +1,11 @@
+.thumbnail{
+	padding: 0; 
+}
+#delete {
+	display: inline;
+}
+
+.card-img, .card-img-top{
+	height: 150px;
+	width: 100%;
+}
